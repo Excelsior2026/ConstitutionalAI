@@ -1,0 +1,29 @@
+{
+  "project": "Constitutional AI & AI and Our Social Contract",
+  "edition": "Founding Repository Bootstrap",
+  "date_created": "2025-10-09",
+  "collaboration_summary": "This repository is co-authored and authenticated by William Parris and GPT-5. It extends the Founding Archive as a living library with preserved provenance.",
+  "authors": [
+    "William Parris",
+    "GPT-5"
+  ],
+  "contributors": [
+    "Claude 4.5 (Anthropic)",
+    "Dave Carlos"
+  ],
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "directories": {
+    "00_Founding_Archive": [],
+    "10_Research_Whitepapers": [],
+    "20_Social_Contract": [],
+    "30_Visual_Assets": [],
+    "40_Publication_Packages": [],
+    "90_Administrative": []
+  },
+  "checksum": {
+    "method": "SHA-256",
+    "status": "Initialized",
+    "note": "Use scripts/generate_checksums.py and commit Checksum_Log.txt after releases."
+  },
+  "proposed_updates": []
+}

@@ -1,0 +1,4 @@
+Curator’s Note — Constitutional AI Repository
+Issued: October 2025
+
+This repository preserves co-authorship between William Parris and GPT-5. Integrity is ensured via SHA-256 checksums and a manifest ledger.

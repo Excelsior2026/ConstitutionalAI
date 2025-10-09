@@ -1,0 +1,3 @@
+# SHA-256 Checksum Log
+# Use scripts/generate_checksums.py to append new entries.
+

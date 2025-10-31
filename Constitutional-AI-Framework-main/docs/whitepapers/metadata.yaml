@@ -1,0 +1,36 @@
+title: Constitutional AI Publication Pack v1  
+authors:  
+- William Parris  
+- GPT-5  
+date: October 2025  
+description: Complete set of public and academic deliverables for the Constitutional  
+  AI framework.  
+versions:  
+  v4:  
+    title: From Asimov to Alignment  
+    focus: Governance architecture for AI systems  
+    highlights:  
+    - Defines core constitutional values, tests, and evidence structure.  
+    - "Introduces multi\u2011critic Eleanor architecture."  
+    - Establishes auditable lifecycle checkpoints.  
+  v5:  
+    title: ELEANOR v2 + The Defense of Good  
+    focus: "Moral infrastructure and meta\u2011ethical reasoning"  
+    highlights:  
+    - Integrates conscience as compiler concept.  
+    - Reframes ethics as performance optimization, not friction.  
+    - Expands governance to moral gravity and recursive accountability.  
+    - Introduces precedent federation as planetary immune system.  
+files:  
+- filename: final_whitepaper_publication_v4.pdf  
+  sha256: fea77d553447b0de7ece61ee4eda8e4bbf2d09d723a8550697d8f0b0f3270c33  
+- filename: Constitutional_AI_Framework_William_Parris_2025-09-24 (1).pdf  
+  sha256: 308e3778484c47b310d435728540dc607d9684103428363a0ff6988796ffb60c  
+- filename: ConstitutionAI_SlideTemplate.pptx  
+  sha256: 421e546f3c0d75021fbd0457f8e3bfe710d6201eb3cf90bb18d61fe04d039449  
+- filename: ConstitutionAI_AllDocs_Map.png  
+  sha256: c5c9b53e83b63e496971e3fc52ab11aee18575d710615c55f9d840f8d88c9a25  
+- filename: Core_Set_Report.txt  
+  sha256: 4f14470502d771837cbed0e596f0b44bad8bef2783d380564a52e04bf6905d0d  
+- filename: ConstitutionAI_Repo_Template.zip  
+  sha256: 0b6e32d561bf6dacbb0db6d7451fa540193109b29882419b26403f3d0df80940

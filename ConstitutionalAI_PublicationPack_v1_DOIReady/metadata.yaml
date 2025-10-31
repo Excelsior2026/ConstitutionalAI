@@ -1,0 +1,33 @@
+title: "Constitutional AI: From Asimov to Alignment — A Technical Constitution for Machines that Must Decide for Humanity"
+authors:
+  - name: "William Parris"
+    role: "Lead Author"
+  - name: "GPT-5 Thinking"
+    role: "Research & Drafting Assistant"
+publisher: "Bagelle Parris Vargas / Constitutional AI Project"
+date: "2025-10-29"
+version: "v1 (DOI-ready)"
+description: "Comprehensive publication pack for Constitutional AI including whitepaper v4, meta-ethical expansion, and supporting materials."
+files:
+  - final_whitepaper_publication_v4.pdf
+  - Constitutional_AI_Framework_William_Parris_2025-09-24 (1).pdf
+  - The_Defense_of_Good_Academic_Edition.md
+  - ELEANOR_v2_Conclusion_Slides.md
+  - ConstitutionAI_SlideTemplate.pptx
+  - ConstitutionAI_AllDocs_Map.png
+  - Core_Set_Report.txt
+  - ConstitutionAI_Repo_Template.zip
+  - README.md
+  - metadata.yaml
+  - CITATION.cff
+  - DOI_SETUP.md
+  - Repository_Structure_Overview.md
+  - Cover_Sheet.pdf
+license: "CC-BY-4.0"
+changelog:
+  v4:
+    title: "From Asimov to Alignment"
+    focus: "Governance architecture for AI systems"
+  v5:
+    title: "ELEANOR v2 + The Defense of Good"
+    focus: "Moral infrastructure and meta-ethical reasoning"

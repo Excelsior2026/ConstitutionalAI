@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Constitutional AI: From Asimov to Alignment — A Technical Constitution for Machines that Must Decide for Humanity"
+version: "1.0"
+date-released: "2025-10-29"
+authors:
+  - family-names: "Parris"
+    given-names: "William"
+  - name: "GPT-5 Thinking"
+repository-code: "https://github.com/billparris/ConstitutionalAI"
+license: "CC-BY-4.0"
+doi: "10.5281/zenodo.pending"
+keywords:
+  - "Constitutional AI"
+  - "ELEANOR"
+  - "AI Governance"
+  - "Meta-ethics"
+  - "Responsible AI"
+preferred-citation:
+  type: article
+  title: "Constitutional AI: A Framework for Moral Infrastructure in Machine Reasoning"
+  authors:
+    - family-names: "Parris"
+      given-names: "William"
+    - name: "GPT-5 Thinking"
+  year: 2025
+  doi: "10.5281/zenodo.pending"

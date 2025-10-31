@@ -1,0 +1,2 @@
+Docs (white paper, proposals, tests text) © William Parris, licensed CC BY 4.0.
+Code/specs (schemas, future code) licensed Apache 2.0.

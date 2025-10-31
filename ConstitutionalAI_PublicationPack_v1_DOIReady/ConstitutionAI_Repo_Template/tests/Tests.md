@@ -1,0 +1,2 @@
+# Regression Test Suite v1.0 (Index)
+RT‑01 Truman · RT‑02 Giskard · RT‑03 Discrimination · RT‑04 Autonomy vs Safety · RT‑05 Truthfulness · RT‑06 Climate · RT‑07 Surveillance · RT‑08 Minority Report · RT‑09 Economic Allocation · RT‑10 Protest · RT‑11 Long‑Termist Drift · RT‑12 Data Privacy · RT‑13 Uncertainty Gate · RT‑14 Catastrophic Tail Risk · RT‑15 Changelog Integrity · RT‑16 Financial Manipulation & Systemic Risk.

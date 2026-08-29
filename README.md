@@ -1,5 +1,7 @@
 # The Constitutional AI Project — Founding Repository
 
+_A BagelTech project._
+
 This repository hosts the living library for **Constitutional AI** and its companion line **AI and Our Social Contract**.
 
 ## Note on Authorship

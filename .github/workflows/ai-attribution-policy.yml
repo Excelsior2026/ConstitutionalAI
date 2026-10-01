@@ -1,0 +1,56 @@
+name: AI Attribution Policy
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  validate-ai-attribution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate AI participation metadata
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          python3 - <<'PY'
+          import os, re, sys
+
+          body = os.environ.get("PR_BODY") or ""
+          head = (os.environ.get("HEAD_SHA") or "").strip().lower()
+
+          def field(name):
+              m = re.search(rf"(?mi)^\s*{re.escape(name)}\s*:\s*(.*?)\s*$", body)
+              return m.group(1).strip() if m else None
+
+          drafted = field("AI-Drafted")
+          if drafted is None or drafted.lower() not in {"yes", "no"}:
+              sys.exit("AI attribution policy: PR body must contain 'AI-Drafted: yes' or 'AI-Drafted: no'. See AI_ATTRIBUTION.md.")
+
+          if drafted.lower() == "no":
+              print("AI-Drafted: no — cross-model review metadata not required.")
+              raise SystemExit(0)
+
+          drafting = field("Drafting-Model")
+          reviewing = field("Reviewing-Model")
+          status = field("Cross-Model-Review")
+          reviewed_sha = field("Review-Commit-SHA")
+
+          bad = {"", "n/a", "na", "none", "tbd", "unknown"}
+          if not drafting or drafting.lower() in bad:
+              sys.exit("AI attribution policy: Drafting-Model must contain the exact drafting model name/version.")
+          if not reviewing or reviewing.lower() in bad:
+              sys.exit("AI attribution policy: Reviewing-Model must contain the exact reviewing model name/version.")
+          if drafting.strip().casefold() == reviewing.strip().casefold():
+              sys.exit("AI attribution policy: the reviewing model must be different from the drafting model.")
+          if (status or "").strip().lower() != "completed":
+              sys.exit("AI attribution policy: Cross-Model-Review must be 'completed' for an AI-drafted PR.")
+          if not reviewed_sha or reviewed_sha.strip().lower() != head:
+              sys.exit(f"AI attribution policy: Review-Commit-SHA must equal the current PR head SHA: {head}")
+
+          print(f"AI attribution policy satisfied: drafted by {drafting}; reviewed by {reviewing}; head {head}.")
+          PY

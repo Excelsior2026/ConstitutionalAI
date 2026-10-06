@@ -1,0 +1,19 @@
+# CAPSF-style shadow CI; existing GitHub Actions/deployments remain authoritative.
+when:
+  - event: [push, pull_request, pull_request_metadata, manual]
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    settings: {partial: false, depth: 0, tags: true}
+steps:
+  - name: portable-verification
+    image: alpine:3.20
+    environment: {DAGGER_VERSION: "1.0.0-beta.14"}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+      - apk add --no-cache curl docker-cli
+      - curl -fsSL https://dl.dagger.io/dagger/install.sh | DAGGER_VERSION="$${DAGGER_VERSION}" BIN_DIR=/usr/local/bin sh
+      - dagger call verify
+    when:
+      - event: [push, pull_request, manual]

@@ -7,3 +7,7 @@ Non-negotiable owner rules:
 - AI-drafted PRs must name the drafting model and be reviewed at the final head SHA by a **different model** before merge.
 - Both participating models must be identified in the PR.
 - Never claim model participation that did not occur.
+
+## Common repository governance
+
+Before authoring or accepting changes, read and follow [GOVERNANCE_BASELINE.md](GOVERNANCE_BASELINE.md). Human approval, actual independent final-head review evidence, protected product boundaries, and truthful CI status are mandatory. Repo-specific restrictions remain in force.
